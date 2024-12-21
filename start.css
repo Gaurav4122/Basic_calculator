@@ -1,0 +1,171 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* 
+body{
+    background-color: rgb(177, 179, 181);
+} */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+}
+
+a{
+    width:140px;
+    padding:15px;
+    font-weight: bold;
+    font-size:15px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+h2{
+    font-size: 45px;
+    text-decoration: dashed;
+    text-decoration-color: red;
+
+}
+
+h3{
+    font-size:50px;
+    
+}
+.first{
+    box-shadow: 4px 4px 10px 4px blue;
+    text-align: center;
+   
+}
+
+.second{
+    box-shadow: 4px 4px 10px 4px orange;
+    text-align: center;
+}
+
+.third{
+    box-shadow: 4px 4px 10px 4px green;
+}
+.fourth{
+    box-shadow: 4px 4px 10px 4px violet;
+    text-align: center;
+    
+}
+.thanks{
+    border-radius:50%; 
+    font-size:21px;
+    text-align: center;
+    padding:30px;
+    background-color: palevioletred;
+    display: inline-block;
+    position: relative;
+    font-weight: bolder;
+    border: 8px solid rgb(142, 141, 141);
+    top:6vh;
+    left:44vw;
+    animation: gaurav;
+    animation-duration:10s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes gaurav {
+    0%{
+        transform: translateX(0px);
+        background-color: aquamarine;
+       
+    }
+    50%{
+        transform: translateX(450px);
+        background-color:rgb(201, 104, 201);
+        
+    }
+
+    50%{
+        transform: translateX(450px);
+        background-color:paleturquoise;
+        
+
+    }
+    100%{
+        transform: translateX(-450px);
+        background-color:violet;
+        
+
+    }
+    
+}
+
+@media (max-width:650px){
+    .thanks{
+        left:0px;
+    }
+        
+    @keyframes gaurav {
+        0%{
+            transform: translateX(0px);
+            background-color: aquamarine;
+           
+        }
+        50%{
+            transform: translateX(235px);
+            background-color:rgb(201, 104, 201);
+            
+        }
+    
+    }
+     
+    a{
+        padding:16px;
+        width:187px;
+        margin:4px;
+        font-size:18px;
+    }
+
+    .thanks{
+        top:10.2vh;
+    }
+    h3{
+        font-size:34px;
+        margin-top:5px;
+        
+    }
+    h2{
+        font-size:26px;
+    }
+}
+
+/* media quries for the tablet */
+@media (min-width:652px) and (max-width:900px){
+
+    h3{
+        font-size:70px;
+        margin-top:8px;
+        
+    }
+    h2{
+        font-size:45px;
+    }
+    a{
+        padding:24px;
+        width:200px;
+        margin:6px;
+        font-size:20px;
+    }
+
+    .third{
+        text-align: center;
+    }
+
+    .thanks{
+        top:24vh;
+    }
+
+}
